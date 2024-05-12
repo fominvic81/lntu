@@ -1,4 +1,4 @@
-#include "text.h"
+﻿#include "text.h"
 #include "utf8.h"
 
 Text::Text(RenderMode render_mode, std::vector<FT_Glyph> unique_glyphs, std::vector<Glyph> glyphs, FT_Vector pen, FT_BBox bbox) {

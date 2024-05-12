@@ -1,12 +1,12 @@
-#pragma once
+﻿#pragma once
 #include <cmath>
 #include <ft2build.h>
 #include FT_FREETYPE_H
 #include FT_GLYPH_H
 
 #include "color.h"
-#include "font.h"
-#include "text.h"
+#include "../text/font.h"
+#include "../text/text.h"
 #include "string.h"
 
 struct UniformColor {

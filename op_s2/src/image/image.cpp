@@ -1,8 +1,8 @@
-#include <algorithm>
+﻿#include <algorithm>
 #include <iostream>
 
 #include "image.h"
-#include "utf8.h"
+#include "../text/utf8.h"
 
 Image::Image(int w, int h) {
 	width = w;

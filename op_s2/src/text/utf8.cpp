@@ -1,4 +1,4 @@
-#include "utf8.h"
+﻿#include "utf8.h"
 
 std::vector<unsigned int> UTF8::decode(const char bytes[]) {
 	const unsigned char mask1 = 0b11000000;

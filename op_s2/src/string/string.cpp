@@ -1,4 +1,4 @@
-#include "string.h"
+﻿#include "string.h"
 #include <cstring>
 
 String::String(char text[], size_t text_size) {

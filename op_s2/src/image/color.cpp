@@ -1,4 +1,4 @@
-#include "color.h"
+﻿#include "color.h"
 
 Color24::Color24() : r(0), g(0), b(0) {}
 Color24::Color24(int r, int g, int b) : r(r), g(g), b(b) {}
