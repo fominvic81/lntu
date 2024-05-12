@@ -6,7 +6,8 @@ find_package(Freetype)
 set(string_sources "src/string/string.cpp")
 set(image_sources "src/image/bmp.cpp" "src/image/color.cpp" "src/image/image.cpp")
 set(text_sources "src/text/font.cpp" "src/text/text.cpp" "src/text/utf8.cpp")
-set(all_sources ${string_sources} ${image_sources} ${text_sources})
+set(sound_sources "src/sound/wave.cpp" "src/sound/wav.cpp" "src/sound/functions.cpp")
+set(all_sources ${string_sources} ${image_sources} ${text_sources} ${sound_sources})
 
 add_executable(lab1 "src/lab1_cli.cpp")
 add_executable(lab2 "src/lab2_cli2.cpp")
@@ -22,6 +23,8 @@ target_link_libraries(lab7 Freetype::Freetype)
 
 add_executable(lab8 "src/lab8_text_rendering.cpp" ${all_sources})
 target_link_libraries(lab8 Freetype::Freetype)
+
+add_executable(lab9 "src/lab9_wav.cpp" ${sound_sources})
 
 configure_file("${CMAKE_SOURCE_DIR}/fonts/ubuntu.mono.ttf" "${CMAKE_CURRENT_BINARY_DIR}/fonts/ubuntu.mono.ttf" COPYONLY)
 
